@@ -1,7 +1,5 @@
-from collections import Counter
 from unittest import TestCase
 
-from leetcode import two_sum
 from leetcode.two_sum import Solution
 
 
