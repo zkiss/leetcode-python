@@ -25,6 +25,10 @@ class TestSolution(TestCase):
         result = self.longestCommonPrefix(["asd", "asd", "asd"])
         self.assertEqual(result, "asd")
 
+    def test_error1(self):
+        result = self.longestCommonPrefix(["", "b"])
+        self.assertEqual(result, "")
+
     def longestCommonPrefix(self, strs: List[str]) -> str:
         s = Solution()
         return s.longestCommonPrefix(strs)
