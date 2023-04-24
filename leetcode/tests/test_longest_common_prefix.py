@@ -1,7 +1,7 @@
 from typing import List
 from unittest import TestCase
 
-from leetcode.tests.longest_common_prefix import Solution
+from leetcode.longest_common_prefix import Solution
 
 
 class TestSolution(TestCase):
