@@ -4,15 +4,13 @@ from typing import List
 # https://leetcode.com/problems/rotate-image
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
-        i = 0
-        while i < len(matrix) / 2:
+        for i in range(0, len(matrix) // 2):
             j = len(matrix) - 1 - i
-            k = 0
-            while k < j - i:
-                tl = [i, i + k]
-                tr = [i + k, j]
-                bl = [j - k, i]
-                br = [j, j - k]
+            for o in range(0, j - i):
+                tl = [i, i + o]
+                tr = [i + o, j]
+                bl = [j - o, i]
+                br = [j, j - o]
 
                 tmp = self.get(matrix, tl)
                 self.move(matrix, bl, tl)
@@ -20,7 +18,7 @@ class Solution:
                 self.move(matrix, tr, br)
                 self.set(matrix, tr, tmp)
 
-                k += 1
+                o += 1
 
             i += 1
 
