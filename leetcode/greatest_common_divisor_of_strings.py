@@ -7,11 +7,9 @@ class Solution:
         return str1[0:self.gcd(len(str1), len(str2))]
 
     def gcd(self, a: int, b: int):
-        larger = max(a, b)
-        smaller = min(a, b)
-        remainder = larger % smaller
+        while b != 0:
+            _b = b
+            b = a % _b
+            a = _b
 
-        if remainder == 0:
-            return smaller
-
-        return self.gcd(remainder, smaller)
+        return a
