@@ -23,6 +23,12 @@ class TestSolution(TestCase):
     def test_sames(self):
         self.assertFalse(self.increasingTriplet([1, 1, 1, 1, 1, 1]))
 
+    def test_aaa(self):
+        self.assertTrue(self.increasingTriplet([1, -10, 2, -20, 3, -30]))
+        self.assertTrue(self.increasingTriplet([1, 100, 2, 90, 3, 80]))
+        self.assertTrue(self.increasingTriplet([-10, 2, -20, 3, -30]))
+        self.assertFalse(self.increasingTriplet([-10, 2, -20, -30]))
+
     def increasingTriplet(self, nums: List[int]) -> bool:
         s = Solution()
         return s.increasingTriplet(nums)
