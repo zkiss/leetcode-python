@@ -1,8 +1,6 @@
 from typing import List
 from unittest import TestCase
 
-from hamcrest import assert_that, starts_with
-
 from leetcode.string_compression import Solution
 
 
