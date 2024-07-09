@@ -1,6 +1,6 @@
 from typing import Optional
 
-from leetcode.listnode import ListNode
+from leetcode.model.listnode import ListNode
 
 
 # https://leetcode.com/problems/merge-two-sorted-lists/

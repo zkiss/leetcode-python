@@ -1,7 +1,7 @@
 from typing import Optional
 from unittest import TestCase
 
-from leetcode.listnode import ListNode, list
+from leetcode.model.listnode import ListNode, list
 from leetcode.merge_two_sorted_lists import Solution
 
 
